@@ -24,7 +24,7 @@ process.env.URLDB = urlDB;
 // ==========================
 // 60 Segundos x 60 Minutos x 24 Horas x 30 Dias
 
-process.env.CADUCIDAD_TOKEN = 60 * 60 * 24 * 30;
+process.env.CADUCIDAD_TOKEN = '48h';
 
 // ==========================
 // Semilla de Autenticacion

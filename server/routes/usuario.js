@@ -10,10 +10,6 @@ const { verificaToken, verificaAdminRole } = require('../middlewares/autenticaci
 
 const app = express();
 
-app.get('/', verificaToken, function(req, res) {
-    res.json('Hello World');
-});
-
 app.get('/usuario', verificaToken, (req, res) => {
     let desde = Number(req.query.desde || 0);
     let limite = Number(req.query.limite || 5);
